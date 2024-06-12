@@ -83,7 +83,7 @@ header nav ul {
     list-style-type: none;
     position: fixed;
     z-index: 1000;
-    background-color: #284d36af;
+    background-color: #000000af;
     border-radius: 10px;
     width: 1280px;
     text-align: center;

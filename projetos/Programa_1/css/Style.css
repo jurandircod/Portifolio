@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    background-image: url(https://umuarama.pr.gov.br/files/Noticias/capa/prefeitura-umuarama-1-1670959668.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100vh;
+    
+}
+
+.form {
+    margin-top: 70px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.imgpref{
+    width: 150px;
+    height: 150px;
+}
