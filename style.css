@@ -8,7 +8,7 @@
     font-style: normal;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
 }
@@ -23,39 +23,41 @@ body {
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #284D36;
+    background-color: #ffffff;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
-button:hover, form .btn-enviar input:hover{
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #284D36;
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #284D36;
 }
+
 /* estilo do cabeçalho */
 
 header {
-    padding: 40px 4%;
+    padding: 0px 4%;
 }
 
 header>.interface {
@@ -64,24 +66,30 @@ header>.interface {
     justify-content: space-between;
 }
 
-header a{
-    color:#6e6e6e;
+header a {
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     transition: 0.2;
 
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
     transform: scale(1.05);
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
+    position: fixed;
+    z-index: 1000;
+    background-color: #284d36af;
+    border-radius: 10px;
+    width: 1280px;
+    text-align: center;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -89,69 +97,71 @@ header nav ul li{
 
 /* ESTILO DO TOPO DO SITE */
 
-section .topo-do-site{
+section .topo-do-site {
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: #fff;
     font-size: 38px;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.topo-do-site .txt-topo-site h1 span {
     color: #284D36;
     font-size: 40px;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0;
-} 
+}
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* estilo das especialidades */
 
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especialidades .flex{
+section.especialidades .flex {
     gap: 60px;
 }
 
-section.especialidades .interface h2{
+section.especialidades .interface h2 {
     color: #fff;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px #cccccc77;
 }
@@ -159,35 +169,36 @@ section.especialidades .interface h2{
 .especialidades .especialidades-box i {
     font-size: 48px;
     color: #284D36;
-    
+
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 26px;
     margin: 15px 0;
 }
 
 /* estilo do sobre */
 
-section.sobre{
+section.sobre {
     padding: 80px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
-.sobre .txt-sobre{
+
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #284D36;
     display: block;
 }
@@ -197,7 +208,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.btn-social button{
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -211,18 +222,18 @@ section.sobre .flex{
 
 /* estilo do protifolio */
 
-section.portfolio{
+section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #b6b5b567;
 }
 
 
-section.portfolio .flex{
+section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
 }
 
-.img-port{
+.img-port {
     width: 360px;
     height: 460px;
     background-size: cover;
@@ -233,11 +244,11 @@ section.portfolio .flex{
     position: relative;
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -255,16 +266,24 @@ section.portfolio .flex{
     transition: .5s;
 }
 
-.overlay:hover{
+.overlay a {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.overlay:hover {
     opacity: 1;
 }
+
 /* estilo do formualrio */
 
-section.formulario{
+section.formulario {
     padding: 80px 4%;
 }
 
-form{
+form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -274,7 +293,8 @@ form{
     margin-top: 40px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     background-color: #3a3636;
     border: 0;
@@ -285,17 +305,17 @@ form input, form textarea{
     font-size: 18px;
 }
 
-form textarea{
+form textarea {
     resize: none;
     max-height: 400px;
 }
 
-form .btn-enviar{
+form .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-enviar input[type=submit]{
+form .btn-enviar input[type=submit] {
     width: 120px;
     background-color: #284D36;
     color: #000;
@@ -305,23 +325,25 @@ form .btn-enviar input[type=submit]{
 }
 
 /* estilo do rodape */
-footer{
+footer {
     padding: 60px 4%;
     box-shadow: 0 0 40px 10px #cfcece49;
 }
 
-footer .flex{
+footer .flex {
     display: flex;
     justify-content: space-between;
 }
-footer .line-footer{
+
+footer .line-footer {
     padding: 20px 0;
 }
 
-.borda{
+.borda {
     border-top: 2px solid #284D36;
 }
-footer .line-footer p i{
+
+footer .line-footer p i {
     color: #284D36;
     font-size: 22px;
     padding: 10px;
@@ -329,4 +351,94 @@ footer .line-footer p i{
 
 footer .line-footer p a {
     color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* Classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .topo-do-site h1 {
+        font-size: 32px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    /* especialidades */
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    /* sobre */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* portfolio */
+
+    section.portifolio{
+        padding: 80px 8%;
+
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    /* rodapé */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+        
+    }
 }
