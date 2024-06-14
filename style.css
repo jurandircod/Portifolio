@@ -14,8 +14,12 @@
 }
 
 body {
-    background-color: #000;
+    
     height: 100vh;
+    background-image: url("https://images6.alphacoders.com/330/thumb-1920-330082.jpg") ;
+    background-size: cover;
+    
+    
 }
 
 .interface {
@@ -40,7 +44,7 @@ body {
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #284D36;
+    box-shadow: 0px 0px 8px #1C959F;
     transform: scale(1.05);
 }
 
@@ -51,7 +55,7 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color: #284D36;
+    color: #1C959F;
 }
 
 /* estilo do cabeçalho */
@@ -114,7 +118,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #284D36;
+    color: #1C959F;
     font-size: 40px;
 }
 
@@ -168,7 +172,7 @@ section.especialidades .interface h2 {
 
 .especialidades .especialidades-box i {
     font-size: 48px;
-    color: #284D36;
+    color: #1C959F;
 
 }
 
@@ -199,7 +203,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-    color: #284D36;
+    color: #1C959F;
     display: block;
 }
 
@@ -213,7 +217,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #284D36;
+    background-color: #1C959F;
     font-size: 22px;
     cursor: pointer;
     margin: 0 8px;
@@ -224,7 +228,7 @@ section.sobre .flex {
 
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #b6b5b567;
+    box-shadow: 0 0 40px 10px #b6b5b500;
 }
 
 
@@ -317,7 +321,7 @@ form .btn-enviar {
 
 form .btn-enviar input[type=submit] {
     width: 120px;
-    background-color: #284D36;
+    background-color: #1C959F;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -327,7 +331,7 @@ form .btn-enviar input[type=submit] {
 /* estilo do rodape */
 footer {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #cfcece49;
+    box-shadow: 0 0 40px 10px #cfcece1a;
 }
 
 footer .flex {
@@ -340,11 +344,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #284D36;
+    border-top: 2px solid #1C959F;
 }
 
 footer .line-footer p i {
-    color: #284D36;
+    color: #1C959F;
     font-size: 22px;
     padding: 10px;
 }
