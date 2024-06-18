@@ -160,6 +160,8 @@ section.especialidades {
 
 section.especialidades .flex {
     justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 
 section.especialidades .interface h2 {
@@ -174,6 +176,12 @@ section.especialidades .interface h2 {
     transition: .2s;
 
 }
+
+.especialidades{
+    
+}
+
+
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
