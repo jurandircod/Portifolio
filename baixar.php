@@ -1,7 +1,7 @@
 <?php 
 
 
-$arquivo = "curriculo.pdf";
+$arquivo = "JurandirAparecidoCv.pdf";
 
    if(isset($arquivo) && file_exists($arquivo)){
    // faz o teste se a variavel não esta vazia e se o arquivo realmente existe
