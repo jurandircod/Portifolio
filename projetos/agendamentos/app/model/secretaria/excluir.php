@@ -10,7 +10,7 @@ include_once('../../config/config.php');
 
 
 function redirecionar(){
-    header("Location: ../../../../agendamentos/index.php?page=cadsec");
+    header("Location: ../../..//index.php?page=cadsec");
 }
 
 $id_secretaria = $_GET['id'];

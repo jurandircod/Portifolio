@@ -9,7 +9,7 @@ include("../../config/config.php");
 if(isset($id_secretaria) && isset($nome_setor)){
     $alterName = "UPDATE tbsecretaria SET  nome ='{$nome_setor}' WHERE codigo = {$id_secretaria}";
     if($conn->query($alterName)){
-        header("location: /agendamentos/index.php?page=cadsec&alterSucess=1");
+        header("location: ../../../index.php?page=cadsec&alterSucess=1");
     }else{
         echo "erro na query" . $conn->error;
     }

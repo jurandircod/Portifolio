@@ -19,13 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt= $conn->prepare($query);
     $stmt->bind_param("sisss", $nomeLocal, $maximoPessoas, $stringEndereco, $descricao, $telefone);
     if($stmt->execute()){
-        header("location: http://localhost/agendamentos/index.php?page=cadloc&sucessCad=1");
+        header("location: ../../../index.php?page=cadloc&sucessCad=1");
     }else{
         echo "erro na inserção";
     }
 
     }else{
-        header("location: http://localhost/agendamentos/index.php?page=cadloc&errorCampos=1&invalid=1");
+        header("location: ../../../index.php?page=cadloc&errorCampos=1&invalid=1");
     }
     // Restante do seu código...
 } else {

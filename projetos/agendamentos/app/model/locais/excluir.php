@@ -10,7 +10,7 @@ $excluirEquip = "DELETE FROM tblocal WHERE codigo='".$pegarId."'";
 
 if(isset($pegarId)){
     if($conn->query($excluirEquip)){
-        header("location: /agendamentos/index.php?page=cadloc&excSucess=1");
+        header("location: ../../../index.php?page=cadloc&excSucess=1");
     }else{
         echo "erro ao excluir local," . $conn->error;
     }
@@ -18,5 +18,5 @@ if(isset($pegarId)){
     echo "erro ao deletar ";
 }
 }else{
-    header("location: /agendamentos/index.php?page=cadEquip&excLocError=1");
+    header("location: ../../../index.php?page=cadEquip&excLocError=1");
 }

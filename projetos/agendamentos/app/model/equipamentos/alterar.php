@@ -2,11 +2,11 @@
 
 function sucess()
 {
-    header("location: /agendamentos/index.php?page=cadEquip&alterSucess=1");
+    header("location: ../../../index.php?page=cadEquip&alterSucess=1");
 }
 function error()
 {
-    header("location: /agendamentos/index.php?page=cadEquip&alterError=1");
+    header("location: ../../../index.php?page=cadEquip&alterError=1");
 }
 include_once("../../config/config.php");
 

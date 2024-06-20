@@ -27,6 +27,6 @@ if (isset($excluirAg)) {
         $stmt->execute();
         $result = $stmt->get_result();
         $stmt->close();
-        header('location: /agendamentos/index.php?excSucess=1');
+        header('location: ../../../index.php?excSucess=1');
     }
 }

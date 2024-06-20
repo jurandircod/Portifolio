@@ -26,7 +26,7 @@ if ($_POST['senha'] == $_POST['confirm']) {
     $result = $stmt->get_result();
     
     if ($result->num_rows >= 1) {
-        header("Location: /agendamentos/register.php?errorEmail=1");
+        header("Location: ../../../register.php?errorEmail=1");
     } else {
 
         // Inserir dados  tbusuario com a senha criptografada
@@ -37,14 +37,14 @@ if ($_POST['senha'] == $_POST['confirm']) {
         $stmt->bind_param('sssss', $setor, $nome, $email, $hash_senha, $tel);
 
         if ($stmt->execute()) {
-            header("Location: /agendamentos/login.php?sucess=1");
+            header("Location: ../../../login.php?sucess=1");
         } else {
             echo "Erro ao registrar o usuário: " . $stmt->error;
         }
     }
 
 } else {
-    header("Location: /agendamentos/register.php?errorSenha=1");
+    header("Location: ../../../register.php?errorSenha=1");
 }
 
 $conn->close();

@@ -12,10 +12,10 @@ if (strlen($_GET['nomeSetor']) > 1 && isset($_GET['secretaria'])) {
     $stmt->bind_param('si', $nomeSetor, $nomeSecretaria);
 
     if ($stmt->execute()) {
-        header("Location: /agendamentos/index.php?page=cadsetor&sucessCad=1");
+        header("Location: ../../../index.php?page=cadsetor&sucessCad=1");
     } else {
         echo "Erro ao registrar o usuário: " . $stmt->error;
     }
 } else {
-    header("Location: /agendamentos/index.php?page=cadsetor&errorCampos=1");
+    header("Location: ../../../index.php?page=cadsetor&errorCampos=1");
 }

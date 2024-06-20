@@ -4,7 +4,7 @@ if (!isset($_SESSION)) {
 }
 
 if (!isset($_SESSION['codigo'])) {
-    die("você precisa estar logado para excluir <a href='/agendamentos/login.php'> voltar para o inicio</a>");
+    die("você precisa estar logado para excluir <a href='login.php'> voltar para o inicio</a>");
 }
 ?>
 

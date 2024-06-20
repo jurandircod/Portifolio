@@ -16,7 +16,7 @@ if (strlen($_GET['nomeSecretaria']) > 2 ) {
         $stmt->bind_param('s', $nomeSecretaria);
 
         if ($stmt->execute()) {
-            header("Location: /agendamentos/index.php?page=cadsec&sucessCad=1");
+            header("Location: ../../../index.php?page=cadsec&sucessCad=1");
         } else {
             echo "Erro ao registrar o usuário: " . $stmt->error;
         }
@@ -26,5 +26,5 @@ if (strlen($_GET['nomeSecretaria']) > 2 ) {
         echo "Erro na preparação da consulta: " . $conn->error;
     }
 } else {
-    header("Location: /agendamentos/index.php?page=cadsec&errorCampos=1");
+    header("Location: ../../../index.php?page=cadsec&errorCampos=1");
 }

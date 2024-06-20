@@ -16,8 +16,8 @@ if (strlen($_POST['nome']) > 1  && strlen($_POST['marca']) > 1 && strlen($_POST[
     $stmt->bind_param("ssii",  $nome, $marca, $patrimonio, $condição);
 
     if ($stmt->execute()) {
-        header("location: /agendamentos/index.php?page=cadEquip&sucessCad=1");
+        header("location: ../../../index.php?page=cadEquip&sucessCad=1");
     }
 }else{
-    header("location: /agendamentos/index.php?page=cadEquip&errorCampos=1&invalid=1");
+    header("location: ../../../index.php?page=cadEquip&errorCampos=1&invalid=1");
 }

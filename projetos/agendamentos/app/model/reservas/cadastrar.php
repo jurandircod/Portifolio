@@ -33,7 +33,7 @@ if((strlen($_POST['dia']) > 1) && (strlen($_POST['horaInicio']) > 1) && (strlen(
     $result = $stmt->get_result();
     // Verifica se há conflitos
     if ($result->num_rows) {
-        echo "erro";
+        header("location: ../../../index.php?page=agendar&errorCad=1");
     } else {
         // Insere o novo agendamento no banco de dados
         $stmt->close();
@@ -43,13 +43,13 @@ if((strlen($_POST['dia']) > 1) && (strlen($_POST['horaInicio']) > 1) && (strlen(
         $stmtInsert->bind_param("sssiis", $nomeEvento, $date_inicio, $date_fim, $userId, $idEvento, $descricao);
 
         if ($stmtInsert->execute()) {
-            header("location: http://localhost/agendamentos/index.php?page=agendar&sucessCad=1");
+            header("location: ../../../index.php?page=agendar&sucessCad=1");
 
         } else {
             echo "Erro na inserção: " . $stmtInsert->error;
         }
     }
 }else{
-    header("location: http://localhost/agendamentos/index.php?page=agendar&errorCampos=1&invalid=1");
+    header("location: ../../../index.php?page=agendar&errorCampos=1&invalid=1");
 }
 ?>

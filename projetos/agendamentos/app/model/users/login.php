@@ -30,7 +30,7 @@ if ($quantidade == 1) {
         $_SESSION['codigoSetor'] = $usuario['codigoSetor'];
         $_SESSION['email'] = $usuario['email'];
         // if ($_SESSION['permissoes'] == 1 || $_SESSION['permissoes'] == 2) {
-        header('location: /agendamentos/index.php');
+        header('location: /portifolio/Portifolio/projetos/agendamentos/index.php');
         // } 
     } else {
 

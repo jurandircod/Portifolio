@@ -2,11 +2,11 @@
 
 function sucess()
 {
-    header("location: /agendamentos/index.php?page=cadloc&alterSucess=1");
+    header("location: ../../../index.php?page=cadloc&alterSucess=1");
 }
 function error()
 {
-    header("location: /agendamentos/index.php?page=cadloc&alterError=1");
+    header("location: ../../../index.php?page=cadloc&alterError=1");
 }
 
 if (strlen($_POST['nomeLocal']) > 0 || strlen($_POST['endereco']) > 0 || strlen($_POST["maximoPessoas"]) > 0 || strlen($_POST['descricao']) > 0 || strlen($_POST['telefone']) > 0) {
