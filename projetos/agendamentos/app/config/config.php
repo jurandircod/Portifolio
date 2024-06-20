@@ -1,9 +1,9 @@
 <?php
 
-@define("HOST", "localhost");
-@define("USER", "root");
-@define("PASSWD", ""); // lembrar de mudar a psswd no ubuntu
-@define("DBname", "dbagendamentos");
+@define("HOST", "sql111.infinityfree.com");
+@define("USER", "	if0_36761125");
+@define("PASSWD", "L45B2NHfEg"); // lembrar de mudar a psswd no ubuntu
+@define("DBname", "if0_36761125_portfolio");
 
 $conn = new mysqli(HOST, USER, PASSWD, DBname); //conecta ao banco de dados.
 

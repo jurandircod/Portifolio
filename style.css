@@ -293,8 +293,14 @@ section.portfolio .flex {
     transition: .5s;
 }
 
+.overlay a{
+
+}
+
+
 .overlay a {
     list-style: none;
+    list-style: circle;
     font-size: 24px;
     font-weight: 600;
     color: #fff;
