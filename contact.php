@@ -17,10 +17,9 @@ try {
     // Configurações do servidor SMTP
     $mail->isSMTP();
     $mail->SMTPAuth   = true;
-    $mail->Host       = 'smtp-mail.outlook.com';  
-    $mail->SMTPSecure = 'tls';
-    $mail->Username   = '';  
-    $mail->Password   = '';  
+    $mail->Username   = 'jurandiraparecido19651965@gmail.com';  // Seu usuário SMTP (seu email do Gmail)
+    $mail->Password   = '0tr4s3nh4';  // Sua senha SMTP (senha do Gmail ou senha de aplicativo)
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // Remetente
