@@ -1,35 +1,43 @@
 <?php
-require 'vendor/autoload.php';  // Inclua o autoloader gerado pelo Composer
+require 'vendor/autoload.php';  
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+
+
 $mail = new PHPMailer(true);
 
 try {
+
+    $nome = htmlspecialchars($_POST['nome']);
+    $email = htmlspecialchars( $_POST['email']);
+    $celular = $_POST['celular'];
+    $mensagem = $_POST['mensagem'];
     // Configurações do servidor SMTP
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';  // Host SMTP do Gmail
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'jurandiraparecido19651965@gmail.com';  // Seu usuário SMTP (seu email do Gmail)
-    $mail->Password   = '0tr4s3nh4';  // Sua senha SMTP (senha do Gmail ou senha de aplicativo)
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Host       = 'smtp-mail.outlook.com';  
+    $mail->SMTPSecure = 'tls';
+    $mail->Username   = '';  
+    $mail->Password   = '';  
     $mail->Port       = 587;
 
     // Remetente
-    $mail->setFrom('jurandiraparecido19651965@gmail.com', 'teste');
+    $mail->setFrom('demonido@outlook.com', "klurgC");
 
     // Destinatário
     $mail->addAddress('jurandiraparecido19651965@gmail.com', 'jurandir');
 
     // Conteúdo do e-mail
     $mail->isHTML(true);
-    $mail->Subject = 'Assunto do E-mail';
-    $mail->Body    = 'Corpo do e-mail em <b>HTML</b>';
-    $mail->AltBody = 'Corpo do e-mail em texto simples para clientes de e-mail que não suportam HTML';
+    $mail->Subject = 'Portfolio mensagens';
+    $mail->Body    = "nome: $nome <br> email: $email <br> celular: $celular <br> mensagem: $mensagem";
+    $mail->AltBody = 'sem suporte html';
 
     $mail->send();
-    echo 'Mensagem enviada com sucesso';
+    header("location: index.php?status=1");
 } catch (Exception $e) {
-    echo "Mensagem não pôde ser enviada. Erro de envio: {$mail->ErrorInfo}";
+    header("location: index.php?status=2&$mail->ErrorInfo");
 }
+
